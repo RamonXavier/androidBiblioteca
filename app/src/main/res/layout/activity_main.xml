@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nenhum dado..." />
+
+    <EditText
+        android:id="@+id/txtPID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="CÃ³digo do Produto" />
+
+    <EditText
+        android:id="@+id/txtPNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nome do Produto" />
+
+    <EditText
+        android:id="@+id/txtPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="PreÃ§o do Produto"/>
+
+    <Button
+        android:id="@+id/btn_C_Inserir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE/Inserir" />
+
+    <Button
+        android:id="@+id/btn_R_Selecionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="READ/Selecionar" />
+
+
+    <Button
+        android:id="@+id/btn_U_Alterar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE/Atualizar" />
+
+    <Button
+        android:id="@+id/btn_D_Excluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE/Excluir" />
+</LinearLayout>
