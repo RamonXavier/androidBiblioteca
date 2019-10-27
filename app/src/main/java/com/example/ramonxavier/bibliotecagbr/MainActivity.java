@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
                     OkHttpClient client = new OkHttpClient();
 
                     HttpUrl.Builder urlBuilder = HttpUrl.parse("https://ramonabdroid.000webhostapp.com/create.php").newBuilder();
-                    urlBuilder.addQueryParameter("livro_nome", txtPNome.getText().toString());
-                    urlBuilder.addQueryParameter("categoria_livro", txtPreco.getText().toString());
+                    urlBuilder.addQueryParameter("livroNome", txtPNome.getText().toString());
+                    urlBuilder.addQueryParameter("livroCategoria", txtPreco.getText().toString());
 
                     String url = urlBuilder.build().toString();
 
@@ -99,8 +99,8 @@ public class MainActivity extends AppCompatActivity {
 
                     OkHttpClient client = new OkHttpClient();
 
-                    HttpUrl.Builder urlBuilder = HttpUrl.parse("http:www.meuwebsite.com/crud_android/read.php").newBuilder();
-                    urlBuilder.addQueryParameter("PID", txtPID.getText().toString());
+                    HttpUrl.Builder urlBuilder = HttpUrl.parse("https://ramonabdroid.000webhostapp.com/read.php").newBuilder();
+                    urlBuilder.addQueryParameter("id_livro", txtPID.getText().toString());
 
                     String url = urlBuilder.build().toString();
 
@@ -132,9 +132,9 @@ public class MainActivity extends AppCompatActivity {
 
                                             jsonObject = jsonArray.getJSONObject(0);
 
-                                            txtPID.setText(jsonObject.getString("ID_Produto"));
-                                            txtPNome.setText(jsonObject.getString("P_Nome"));
-                                            txtPreco.setText(jsonObject.getString("P_Preco"));
+                                            txtPID.setText(jsonObject.getString("cd_livro"));
+                                            txtPNome.setText(jsonObject.getString("livro_nome"));
+                                            txtPreco.setText(jsonObject.getString("livro_categoria"));
 
                                         } catch (JSONException e) {
                                             txtInfo.setText(e.getMessage());
@@ -168,10 +168,10 @@ public class MainActivity extends AppCompatActivity {
 
                     OkHttpClient client = new OkHttpClient();
 
-                    HttpUrl.Builder urlBuilder = HttpUrl.parse("http:www.meuwebsite.com/crud_android/update.php").newBuilder();
-                    urlBuilder.addQueryParameter("PID", txtPID.getText().toString());
-                    urlBuilder.addQueryParameter("P_Nome", txtPNome.getText().toString());
-                    urlBuilder.addQueryParameter("P_Preco", txtPreco.getText().toString());
+                    HttpUrl.Builder urlBuilder = HttpUrl.parse("https://ramonabdroid.000webhostapp.com/update.php").newBuilder();
+                    urlBuilder.addQueryParameter("id_livro", txtPID.getText().toString());
+                    urlBuilder.addQueryParameter("livroNome", txtPNome.getText().toString());
+                    urlBuilder.addQueryParameter("livroCategoria", txtPreco.getText().toString());
 
                     String url = urlBuilder.build().toString();
 
@@ -223,8 +223,8 @@ public class MainActivity extends AppCompatActivity {
 
                     OkHttpClient client = new OkHttpClient();
 
-                    HttpUrl.Builder urlBuilder = HttpUrl.parse("http:www.meuwebsite.com/crud_android/delete.php").newBuilder();
-                    urlBuilder.addQueryParameter("PID", txtPID.getText().toString());
+                    HttpUrl.Builder urlBuilder = HttpUrl.parse("https://ramonabdroid.000webhostapp.com/delete.php").newBuilder();
+                    urlBuilder.addQueryParameter("id_livro", txtPID.getText().toString());
                     String url = urlBuilder.build().toString();
                     Request request = new Request.Builder()
                             .url(url)

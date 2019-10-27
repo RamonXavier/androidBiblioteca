@@ -10,51 +10,51 @@
         android:id="@+id/txtInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nenhum dado..." />
+        android:text="Informe os dados e realize a operação desejada" />
 
     <EditText
         android:id="@+id/txtPID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="CÃ³digo do Produto" />
+        android:hint="Código do Livro" />
 
     <EditText
         android:id="@+id/txtPNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Nome do Produto" />
+        android:hint="Nome do Livro" />
 
     <EditText
         android:id="@+id/txtPreco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="PreÃ§o do Produto"/>
+        android:hint="Categoria do Livro"/>
 
     <Button
         android:id="@+id/btn_C_Inserir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CREATE/Inserir" />
+        android:text="Inserir" />
 
     <Button
         android:id="@+id/btn_R_Selecionar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="READ/Selecionar" />
+        android:text="Selecionar" />
 
 
     <Button
         android:id="@+id/btn_U_Alterar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="UPDATE/Atualizar" />
+        android:text="Atualizar" />
 
     <Button
         android:id="@+id/btn_D_Excluir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DELETE/Excluir" />
+        android:text="Excluir" />
 </LinearLayout>
